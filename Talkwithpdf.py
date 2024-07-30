@@ -67,16 +67,16 @@ with st.sidebar:
     with st.expander("Contact Information"):
         st.markdown("For any queries, please feel free to contact:")
         st.markdown(
-            "Email: [eswar.divi.902@gmail.com](mailto:eswar.divi.902@gmail.com)"
+            "Email: [gyandeep2902@gmail.com](mailto:gyandeep2902@gmail.com)"
         )
-        st.markdown("GitHub: [github.com/EswarDivi](https://github.com/EswarDivi)")
+        st.markdown("GitHub: [github.com/gyandeep2902](https://github.com/gyandeep2902)")
 
-    with st.expander("Additional Information"):
-        st.info("Get Your API key at https://dashboard.cohere.com/api-keys")
-        st.markdown(
-            "<h4 style='text-align: center;'>Powered by Cohere</h4>",
-            unsafe_allow_html=True,
-        )
+    # with st.expander("Additional Information"):
+    #     st.info("Get Your API key at https://dashboard.cohere.com/api-keys")
+    #     st.markdown(
+    #         "<h4 style='text-align: center;'>Powered by Cohere</h4>",
+    #         unsafe_allow_html=True,
+    #     )
 
     uploaded_file = st.file_uploader("Choose a file", type=["pdf"])
 
