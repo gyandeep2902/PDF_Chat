@@ -1,5 +1,5 @@
 
-# InteractPDF
+# PDFChat
 
 ## Conversational AI Chatbot - Interact with PDFs like never before!
 
