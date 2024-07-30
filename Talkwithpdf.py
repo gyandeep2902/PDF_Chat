@@ -52,7 +52,7 @@ with st.sidebar:
         "<h2 style='text-align: center; color: #007BFF;'>Upload PDF</h2>",
         unsafe_allow_html=True,
     )
-    cohere_api_key = st.text_input("Enter your Cohere API key", type="password")
+    cohere_api_key = "pamIzZtS62xocbJTrD9uCnlH1eCbmZ1nbNsnF7TN"
     if cohere_api_key:
         try:
             test_model = ChatCohere(model="command", cohere_api_key=cohere_api_key)
