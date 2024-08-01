@@ -1,4 +1,4 @@
-__import__("pysqlite3")
+_import_("pysqlite3")
 import sys
 
 sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
@@ -52,7 +52,7 @@ with st.sidebar:
         "<h2 style='text-align: center; color: #007BFF;'>Upload PDF</h2>",
         unsafe_allow_html=True,
     )
-    cohere_api_key = "pamIzZtS62xocbJTrD9uCnlH1eCbmZ1nbNsnF7TN"
+    cohere_api_key = "OW70QrrXOLM6lA5vin5bRe1FfUXq1hifVTKtguAw"
     if cohere_api_key:
         try:
             test_model = ChatCohere(model="command", cohere_api_key=cohere_api_key)
@@ -64,19 +64,6 @@ with st.sidebar:
             st.stop()
     else:
         st.error("Please enter your Cohere API key to proceed.")
-    with st.expander("Contact Information"):
-        st.markdown("For any queries, please feel free to contact:")
-        st.markdown(
-            "Email: [gyandeep2902@gmail.com](mailto:gyandeep2902@gmail.com)"
-        )
-        st.markdown("GitHub: [github.com/gyandeep2902](https://github.com/gyandeep2902)")
-
-    # with st.expander("Additional Information"):
-    #     st.info("Get Your API key at https://dashboard.cohere.com/api-keys")
-    #     st.markdown(
-    #         "<h4 style='text-align: center;'>Powered by Cohere</h4>",
-    #         unsafe_allow_html=True,
-    #     )
 
     uploaded_file = st.file_uploader("Choose a file", type=["pdf"])
 
@@ -124,7 +111,7 @@ def PDF_loader(document):
 
     prompt_template = """You are an AI chatbot that helps users chat with PDF documents.
     Use the following pieces of context to answer the question at the end. Please follow the following rules:
-    1. If you find the answer, write the answer in a Elegant way and add the list of sources that are **directly** used to derive the answer.
+    1. If you find the answer, write the answer in a Elegant way and add the list of sources that are *directly* used to derive the answer.
     Example:
     The Answer is derived from[1] this page
     [1] Source_ Page:PageNumber
